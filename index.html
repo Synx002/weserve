@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@0.7.2"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></head>
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-white bg-opacity-10 backdrop-blur-lg shadow-lg fixed w-full z-10 top-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Logo dan Brand Name -->
+        <div class="flex items-center">
+          <img src="assets/nav-logo.svg" alt="Logo" class="h-10 w-10">
+          <span class="ml-2 text-xl text-black poppins-bold">weserve.</span>
+        </div>
+
+        <!-- Menu di Tengah -->
+        <div class="hidden md:flex items-center space-x-6 poppins-medium">
+          <a href="#" class="text-secondary transition-transform duration-200 hover:scale-105 font-medium">Product</a>
+          
+          <!-- Dropdown untuk Services -->
+          <div class="relative group">
+            <button class="text-secondary transition-transform duration-200 hover:scale-105 font-medium inline-flex items-center">
+              Services
+              <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+
+            <!-- Dropdown content -->
+            <div class="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded-lg w-48">
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Service 1</a>
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Service 2</a>
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Service 3</a>
+            </div>
+          </div>
+
+          <a href="#" class="text-secondary transition-transform duration-200 hover:scale-105 font-medium">Pricing</a>
+          <a href="#" class="text-secondary transition-transform duration-200 hover:scale-105 font-medium">Testimonial</a>
+          <a href="#" class="text-secondary transition-transform duration-200 hover:scale-105 font-medium">Blog</a>
+        </div>
+
+        <!-- Kantong Belanja dan Sign In -->
+        <div class="flex items-center space-x-6">
+          <a href="#" class="text-gray-700 hover:text-gray-900">
+            <!-- Ikon Kantong Belanja -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18l-1.35 15.58a2 2 0 01-1.99 1.84H6.34a2 2 0 01-1.99-1.84L3 3zm3 3h12M9 7v-2a3 3 0 116 0v2"></path>
+            </svg>
+          </a>
+
+          <a href="#" class="bg-secondary text-semibold text-white px-6 py-2 rounded-full hover:text-accent">
+            Sign In
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Isi halaman untuk simulasi -->
+<div class="container flex flex-col-reverse lg:flex-row max-w-7xl mx-auto w-full gap-8 lg:gap-16 h-lvh pt-16 px-4 sm:px-6 lg:px-8">
+  <!-- Bagian konten teks -->
+  <div class="flex flex-col justify-center gap-8">
+    <div class="flex flex-col lg:flex-row items-center mx-4 gap-4 lg:gap-0">
+      <img src="assets/global.svg" alt="" class="h-6 w-6">
+      <h3 class="text-secondary poppins-semibold text-base mt-2 lg:mt-0">We host more than 120,000 websites</h3>
+    </div>
+    <div class="flex flex-col gap-1">
+      <h1 class="bricolage-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center lg:text-left">
+        Grow Online <br>Business Faster.
+      </h1>
+      <p class="w-full sm:w-10/12 lg:w-8/12 poppins-medium text-base leading-8 mx-auto lg:mx-0 text-center lg:text-left">
+        We provide a variety of servers to grow your users acquisition much user-friendly and boosting up sales.
+      </p>
+    </div>
+    <div class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+      <button class="bg-primary text-white px-6 py-2 rounded-full">Try Free Trial</button>
+      <button class="text-primary px-4 py-2 rounded inline-flex items-center">
+        <img src="assets/device-message.svg" alt="" class="mr-2">Schedule a demo
+      </button>
+    </div>
+  </div>
+
+  <!-- Bagian gambar hero -->
+  <div class="flex justify-center lg:justify-end">
+    <img src="assets/hero.svg" alt="" class="w-full max-w-[500px]">
+  </div>
+</div>
+
+  <div class="mt-20 p-8">
+    <h1 class="text-4xl font-bold text-gray-700">Selamat datang di halaman utama!</h1>
+    <p class="mt-4 text-gray-600">Ini adalah halaman simulasi dengan navbar Tailwind CSS.</p>
+  </div>
+</body>
+</html>
