@@ -8,7 +8,8 @@
   /* Definisikan variabel warna di root */
   --color-primary: #640EF1;   
   --color-secondary: #080C2E; 
-  --color-third: #5D5D7C;  
+  --color-third: #5D5D7C; 
+  --color-fourth: #8D90A8; 
   --color-accent: #FFD15A;  
 }
 
@@ -31,6 +32,10 @@
 
 .text-third {
   color: var(--color-third);
+}
+
+.text-fourth {
+  color: var(--color-fourth);
 }
 
 .text-accent {
@@ -268,4 +273,6 @@
   font-weight: 900;
   font-style: italic;
 }
-  
+
+
+
