@@ -23,11 +23,11 @@
 
         <!-- Menu di Tengah -->
         <div class="hidden md:flex items-center space-x-6 poppins-medium">
-          <a href="#" class="text-secondary transition-transform duration-200 hover:scale-105 font-medium">Product</a>
+          <a href="#" class="text-secondary text-base transition-transform duration-200 hover:scale-105 poppins-medium">Product</a>
           
           <!-- Dropdown untuk Services -->
           <div class="relative group">
-            <button class="text-secondary transition-transform duration-200 hover:scale-105 font-medium inline-flex items-center">
+            <button class="text-secondary transition-transform duration-200 hover:scale-105 poppins-medium inline-flex items-center">
               Services
               <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -35,28 +35,24 @@
             </button>
 
             <!-- Dropdown content -->
-            <div class="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded-lg w-48">
+            <div class="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded-lg w-48 poppins-medium">
               <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Service 1</a>
               <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Service 2</a>
               <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Service 3</a>
             </div>
           </div>
 
-          <a href="#" class="text-secondary transition-transform duration-200 hover:scale-105 font-medium">Pricing</a>
-          <a href="#" class="text-secondary transition-transform duration-200 hover:scale-105 font-medium">Testimonial</a>
-          <a href="#" class="text-secondary transition-transform duration-200 hover:scale-105 font-medium">Blog</a>
+          <a href="#" class="text-secondary transition-transform duration-200 hover:scale-105 poppins-medium">Pricing</a>
+          <a href="#" class="text-secondary transition-transform duration-200 hover:scale-105 poppins-medium">Testimonial</a>
+          <a href="#" class="text-secondary transition-transform duration-200 hover:scale-105 poppins-medium">Blog</a>
         </div>
 
         <!-- Kantong Belanja dan Sign In -->
-        <div class="flex items-center space-x-6">
-          <a href="#" class="text-gray-700 hover:text-gray-900">
-            <!-- Ikon Kantong Belanja -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18l-1.35 15.58a2 2 0 01-1.99 1.84H6.34a2 2 0 01-1.99-1.84L3 3zm3 3h12M9 7v-2a3 3 0 116 0v2"></path>
-            </svg>
+        <div class="flex items-center gap-2.5">
+          <a href="#" class="text-gray-700 hover:text-gray-900 bg-white rounded-full p-2">
+            <img src="assets/bag.svg" alt="" class="">
           </a>
-
-          <a href="#" class="bg-secondary text-semibold text-white px-6 py-2 rounded-full hover:text-accent">
+          <a href="#" class="bg-secondary poppins-semibold text-white text-base px-6 py-2 rounded-full">
             Sign In
           </a>
         </div>
@@ -272,10 +268,8 @@
     <div>
       <div class="bg-white rounded-2xl p-5 gap-5">
         <button class="w-full text-left focus:outline-none flex justify-between items-center" onclick="toggleAccordion(1)">
-          <h2 class="text-xl font-bold">Why do we need to use Kapp?</h2>
-          <!-- Panah pertama (down arrow) -->
+          <h2 class="text-xl poppins-bold">Why do we need to use Kapp?</h2>
           <img src="assets/arrow-down-new.svg" alt="arrow icon" id="arrow-down-1" class="ml-2">
-          <!-- Panah kedua (up arrow), disembunyikan secara default -->
           <img src="assets/btn small secondary.svg" alt="arrow icon" id="arrow-up-1" class="ml-2 hidden">
         </button>
         
@@ -291,10 +285,11 @@
       <div class="bg-white rounded-2xl p-5 gap-5">
         <button class="w-full text-left focus:outline-none flex justify-between items-center" onclick="toggleAccordion(2)">
           <h2 class="text-xl poppins-bold">What if data doesn’t get stored?</h2>
-          <img src="assets/arrow-down.svg" alt="arrow icon" class="ml-2">
+          <img src="assets/arrow-down-new.svg" alt="arrow icon" id="arrow-down-2" class="ml-2">
+          <img src="assets/btn small secondary.svg" alt="arrow icon" id="arrow-up-2" class="ml-2 hidden">
         </button>
         <div id="faq-answer-2" class="hidden">
-          <p class="poppins-medium py-5">Kapp is able to develop by themselve without removing the parents permission and lorem dolor si amet fully run network at 100% avoiding data-loss at any moments</p>
+          <p class="poppins-medium py-5">Kapp is able to develop by themselve without removing the parents permission...</p>
           <a href="#" class="text-primary poppins-semibold">learn more</a>
         </div>
       </div>
@@ -305,7 +300,8 @@
       <div class="bg-white rounded-2xl p-5 gap-5">
         <button class="w-full text-left focus:outline-none flex justify-between items-center" onclick="toggleAccordion(3)">
           <h2 class="text-xl poppins-bold">Do we need to pay 6 months per item?</h2>
-          <img src="assets/arrow-down.svg" alt="arrow icon" class="ml-2">
+          <img src="assets/arrow-down-new.svg" alt="arrow icon" id="arrow-down-3" class="ml-2">
+          <img src="assets/btn small secondary.svg" alt="arrow icon" id="arrow-up-3" class="ml-2 hidden">
         </button>
         <div id="faq-answer-3" class="hidden">
           <p class="poppins-medium py-5">Kapp is able to develop by themselve without removing the parents permission and lorem dolor si amet fully run network at 100% avoiding data-loss at any moments</p>
@@ -319,7 +315,8 @@
       <div class="bg-white rounded-2xl p-5 gap-5">
         <button class="w-full text-left focus:outline-none flex justify-between items-center" onclick="toggleAccordion(4)">
           <h2 class="text-xl poppins-bold">Can we guarantee no any loss at all?</h2>
-          <img src="assets/arrow-down.svg" alt="arrow icon" class="ml-2">
+          <img src="assets/arrow-down-new.svg" alt="arrow icon" id="arrow-down-4" class="ml-2">
+          <img src="assets/btn small secondary.svg" alt="arrow icon" id="arrow-up-4" class="ml-2 hidden">
         </button>
         <div id="faq-answer-4" class="hidden">
           <p class="poppins-medium py-5">Kapp is able to develop by themselve without removing the parents permission and lorem dolor si amet fully run network at 100% avoiding data-loss at any moments</p>
@@ -333,7 +330,8 @@
       <div class="bg-white rounded-2xl p-5 gap-5">
         <button class="w-full text-left focus:outline-none flex justify-between items-center" onclick="toggleAccordion(5)">
           <h2 class="text-xl poppins-bold">How to migrate from other service?</h2>
-          <img src="assets/arrow-down.svg" alt="arrow icon" class="ml-2">
+          <img src="assets/arrow-down-new.svg" alt="arrow icon" id="arrow-down-5" class="ml-2">
+          <img src="assets/btn small secondary.svg" alt="arrow icon" id="arrow-up-5" class="ml-2 hidden">
         </button>
         <div id="faq-answer-5" class="hidden">
           <p class="poppins-medium py-5">Kapp is able to develop by themselve without removing the parents permission and lorem dolor si amet fully run network at 100% avoiding data-loss at any moments</p>
@@ -348,7 +346,8 @@
         <div class="btn-faq">
           <button class="w-full text-left focus:outline-none flex justify-between items-center" onclick="toggleAccordion(6)">
             <h2 class="text-xl poppins-bold">Send e-mail to us for other questions</h2>
-            <img src="assets/arrow-down.svg" alt="arrow icon" class="ml-2">
+            <img src="assets/arrow-down-new.svg" alt="arrow icon" id="arrow-down-6" class="ml-2">
+            <img src="assets/btn small secondary.svg" alt="arrow icon" id="arrow-up-6" class="ml-2 hidden">
           </button>
         </div>
         <div id="faq-answer-6" class="hidden">
@@ -359,70 +358,72 @@
     </div>
   </div>
 </div>
-
-<div class="container flex flex-col-reverse lg:flex-row max-w-7xl mx-auto w-full gap-8 lg:gap-16 px-4 sm:px-6 lg:px-8 py-24">
-  <div class="flex flex-row gap-12 bg-primary p-12 rounded-[40px]">
-    <div class="flex flex-col justify-center w-full gap-8">
-      <div class="flex flex-col lg:flex-row items-center mx-4 gap-5 lg:gap-0 bg-white rounded-full py-2 px-4 max-w-[360px]">
-        <img src="assets/global.svg" alt="" class="h-6 w-6">
-        <h3 class="text-secondary poppins-semibold text-base ml-2 mt-2 lg:mt-0">We host more than 120,000 websites</h3>
+<div class="test" style="background: linear-gradient(to bottom, transparent 50%, #070C29 50%);">
+  <div class="container flex flex-col-reverse lg:flex-row max-w-7xl mx-auto w-full gap-8 lg:gap-16 px-4 sm:px-6 lg:px-8 pt-24">
+    <div class="flex flex-row gap-12 bg-primary p-12 rounded-[40px]">
+      <div class="flex flex-col justify-center w-full gap-8">
+        <div class="flex flex-col lg:flex-row items-center mx-4 gap-5 lg:gap-0 bg-white rounded-full py-2 px-4 max-w-[360px]">
+          <img src="assets/global.svg" alt="" class="h-6 w-6">
+          <h3 class="text-secondary poppins-semibold text-base ml-2 mt-2 lg:mt-0">We host more than 120,000 websites</h3>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h1 class="bricolage-bold text-2xl text-white sm:text-5xl md:text-5xl lg:text-5xl text-center lg:text-left">
+            Start Growing Today.
+          </h1>
+          <p class="w-full sm:w-10/12 lg:w-8/12 text-white poppins-medium text-base leading-8 mx-auto lg:mx-0 text-center lg:text-left">
+            We provide a variety of servers to grow your users acquisition much user-friendly and boosting up sales.
+          </p>
+        </div>
+        <div class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+          <button class="bg-accent poppins-bold text-lg text-black px-10 py-4 rounded-full">Explore More</button>
+          <button class="text-white px-4 py-2 rounded inline-flex items-center">
+            <img src="assets/device-message-white.svg" alt="" class="mr-2">Schedule a demo
+          </button>
+        </div>
       </div>
-      <div class="flex flex-col gap-2">
-        <h1 class="bricolage-bold text-2xl text-white sm:text-5xl md:text-5xl lg:text-5xl text-center lg:text-left">
-          Start Growing Today.
-        </h1>
-        <p class="w-full sm:w-10/12 lg:w-8/12 text-white poppins-medium text-base leading-8 mx-auto lg:mx-0 text-center lg:text-left">
-          We provide a variety of servers to grow your users acquisition much user-friendly and boosting up sales.
-        </p>
+  
+      <div class="grid grid-cols-1 sm:grid-cols-2 w-full lg:grid-cols-3 gap-6">
+        <!-- Kotak 1 -->
+        <div class="bg-white rounded-[26px] py-10 flex flex-col items-center w-[150px] mx-auto hover:bg-black hover:text-white">
+          <img src="assets/scroll-1.svg" alt="Web Crawl Icon" class="w-11 h-11 mb-5">
+          <h4 class="text-lg poppins-bold">Web Crawl</h4>
+        </div>
+      
+        <!-- Kotak 2 -->
+        <div class="bg-white rounded-[26px] py-10 flex flex-col items-center w-[150px] mx-auto hover:bg-black hover:text-white">
+          <img src="assets/scroll-2.svg" alt="Fast Report Icon" class="w-11 h-11 mb-5">
+          <h4 class="text-lg poppins-bold">Fast Report</h4>
+        </div>
+      
+        <!-- Kotak 3 -->
+        <div class="bg-white rounded-[26px] py-10 flex flex-col items-center w-[150px] mx-auto hover:bg-black hover:text-white">
+          <img src="assets/scroll-3.svg" alt="Anti-DDoS Icon" class="w-11 h-11 mb-5">
+          <h4 class="text-lg poppins-bold">Anti-DDoS</h4>
+        </div>
+      
+        <!-- Kotak 4 -->
+        <div class="bg-white rounded-[26px] py-10 flex flex-col items-center w-[150px] mx-auto hover:bg-black hover:text-white">
+          <img src="assets/scroll-4.svg" alt="Auto-Scale Icon" class="w-11 h-11 mb-5">
+          <h4 class="text-lg poppins-bold">Auto-Scale</h4>
+        </div>
+      
+        <!-- Kotak 5 -->
+        <div class="bg-white rounded-[26px] py-10 flex flex-col items-center w-[150px] mx-auto hover:bg-black hover:text-white">
+          <img src="assets/scroll-5.svg" alt="AI Perform Icon" class="w-11 h-11 mb-5">
+          <h4 class="text-lg poppins-bold">AI Perform</h4>
+        </div>
+      
+        <!-- Kotak 6 -->
+        <div class="bg-white rounded-[26px] py-10 flex flex-col items-center w-[150px] mx-auto hover:bg-black hover:text-white">
+          <img src="assets/scroll-6.svg" alt="Top Plugins+ Icon" class="w-11 h-11 mb-5">
+          <h4 class="text-lg poppins-bold">Top Plugins+</h4>
+        </div>
       </div>
-      <div class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-        <button class="bg-accent poppins-bold text-lg text-black px-10 py-4 rounded-full">Explore More</button>
-        <button class="text-white px-4 py-2 rounded inline-flex items-center">
-          <img src="assets/device-message-white.svg" alt="" class="mr-2">Schedule a demo
-        </button>
-      </div>
+      
     </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 w-full lg:grid-cols-3 gap-6">
-      <!-- Kotak 1 -->
-      <div class="bg-white rounded-[26px] py-10 flex flex-col items-center w-[150px] mx-auto">
-        <img src="assets/scroll-1.svg" alt="Web Crawl Icon" class="w-11 h-11 mb-5">
-        <h4 class="text-lg poppins-bold">Web Crawl</h4>
-      </div>
-    
-      <!-- Kotak 2 -->
-      <div class="bg-white rounded-[26px] py-10 flex flex-col items-center w-[150px] mx-auto">
-        <img src="assets/scroll-2.svg" alt="Fast Report Icon" class="w-11 h-11 mb-5">
-        <h4 class="text-lg poppins-bold">Fast Report</h4>
-      </div>
-    
-      <!-- Kotak 3 -->
-      <div class="bg-white rounded-[26px] py-10 flex flex-col items-center w-[150px] mx-auto">
-        <img src="assets/scroll-3.svg" alt="Anti-DDoS Icon" class="w-11 h-11 mb-5">
-        <h4 class="text-lg poppins-bold">Anti-DDoS</h4>
-      </div>
-    
-      <!-- Kotak 4 -->
-      <div class="bg-white rounded-[26px] py-10 flex flex-col items-center w-[150px] mx-auto">
-        <img src="assets/scroll-4.svg" alt="Auto-Scale Icon" class="w-11 h-11 mb-5">
-        <h4 class="text-lg poppins-bold">Auto-Scale</h4>
-      </div>
-    
-      <!-- Kotak 5 -->
-      <div class="bg-white rounded-[26px] py-10 flex flex-col items-center w-[150px] mx-auto">
-        <img src="assets/scroll-5.svg" alt="AI Perform Icon" class="w-11 h-11 mb-5">
-        <h4 class="text-lg poppins-bold">AI Perform</h4>
-      </div>
-    
-      <!-- Kotak 6 -->
-      <div class="bg-white rounded-[26px] py-10 flex flex-col items-center w-[150px] mx-auto">
-        <img src="assets/scroll-6.svg" alt="Top Plugins+ Icon" class="w-11 h-11 mb-5">
-        <h4 class="text-lg poppins-bold">Top Plugins+</h4>
-      </div>
-    </div>
-    
   </div>
 </div>
+
 
 
 <footer class="bg-[#070C29] text-white p-8">
@@ -487,46 +488,6 @@
     <p>All Rights Reserved • Copyright Weserve by BuildWithAngga 2024 in Bandung.</p>
   </div>
 </footer>
-
-
-
-<script>
-   function toggleAccordion(faqId) {
-    const answer = document.getElementById(`faq-answer-${faqId}`);
-    const arrowDown = document.getElementById(`arrow-down-${faqId}`);
-    const arrowUp = document.getElementById(`arrow-up-${faqId}`);
-    const isHidden = answer.classList.contains('hidden');
-    
-    // Close all other answers
-    document.querySelectorAll('[id^="faq-answer"]').forEach(el => {
-      el.classList.add('hidden');
-    });
-
-    // Hide all other arrows (reset)
-    document.querySelectorAll('[id^="arrow-down"]').forEach(el => {
-      el.classList.remove('hidden');
-    });
-    document.querySelectorAll('[id^="arrow-up"]').forEach(el => {
-      el.classList.add('hidden');
-    });
-
-    // Toggle the selected answer
-    if (isHidden) {
-      answer.classList.remove('hidden');
-      arrowDown.classList.add('hidden');  // Hide down arrow
-      arrowUp.classList.remove('hidden'); // Show up arrow
-    } else {
-      answer.classList.add('hidden');
-      arrowDown.classList.remove('hidden'); // Show down arrow
-      arrowUp.classList.add('hidden');      // Hide up arrow
-    }
-  }
-</script>
-
-
-
-
-
 
 <script src="script.js"></script>
 </body>
